@@ -38,7 +38,8 @@ pipeline {
 
     post {
         always {
-            // Optional cleanup actions or notifications can go here
+            // This block will execute after the pipeline, regardless of success or failure
+            echo "Pipeline completed"
         }
     }
 }
